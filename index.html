@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Ignacio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1 class="title-h1 text-center">Weather App By Ignacio</h1>
+
+    <div class="buscador">
+        <input class="input-city" id="search-city" type="text">
+        <button class="btn_search" id="btn_search">Buscar</button>
+    </div>
+
+    <div class="weather-info">
+        <p id="city-name"></p>
+        <p id="country-name"></p>
+        <p id="weather"></p>
+        <p id="temperature"></p>
+        <p id="latitude"></p>
+        <p id="longitude"></p>
+    </div>
+    
+    <script type="module" src="./config/index.js"></script>
+    <script type="module" src="./async/function.js"></script>
+    <script type="module" src="./async/main.js"></script>
+</body>
+</html>

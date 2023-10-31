@@ -1,0 +1,72 @@
+:root {
+    --helvetica: Helvetica;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--helvetica);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilities */
+
+.text-center {
+    text-align: center;
+}
+
+.btn_search {
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    font-weight: bold;
+}
+
+/* Main */
+
+.title-h1 {
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+.buscador {
+    display: flex;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-city {
+    padding: 1.2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.weather-info {
+    display: grid;
+    grid-template: 1fr/repeat(2, 1fr);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-items: center;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.weather-info > p {
+    font-size: 1.8rem;
+}
