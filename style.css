@@ -60,13 +60,35 @@ h1, h2, h3, h4, h5, h6, p {
 .weather-info {
     display: grid;
     grid-template: 1fr/repeat(2, 1fr);
-    gap: 2rem;
-    align-items: flex-start;
+    gap: 1.2rem;
     justify-items: center;
-    text-align: left;
     margin-top: 5rem;
 }
 
 .weather-info > p {
     font-size: 1.8rem;
+}
+
+.image-icon {
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .buscador {
+        flex-direction: column;
+    }
+
+    .weather-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem auto;
+        text-align: center;
+    }
 }
